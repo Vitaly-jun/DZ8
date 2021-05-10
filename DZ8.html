@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ8</title>
+</head>
+<body>
+<script>
+    /*задание1*/
+    let Number = +prompt('Введите число:');
+    if (Number > 0) {
+        alert('Число положительное');
+    } else if (Number < 0) {
+        alert('Число отрицательное');
+    } else if (Number === 0) {
+        alert('Ноль');
+    } else {
+        alert('Не число');
+    }
+    /*задание2*/
+    let age = +prompt('Введите ваш возраст:');
+    if (age >= 0 && age <= 120) {
+        alert('Возраст введен верно');
+    } else if (age < 0 || age > 120) {
+        alert('Возраст введен не верно');
+    } else {
+        alert('Не число');
+    }
+    /*задание3*/
+    let num = +prompt('Введите число:');
+    if (num || -num || num === 0) {
+        alert('Модуль введеного числа = ' + Math.abs(num));
+    } else {
+        alert('Не число');
+    }
+    /*задание4*/
+    let hour = +prompt('Введите часы:');
+    let minute = +prompt('Введите минуты:');
+    let second = +prompt('Введите секунды:');
+    if (hour >= 0 && hour <= 23 && minute >= 0 && minute <= 59 && second >= 0 && second <= 59) {
+        alert('Время верно');
+    } else if (hour < 0 || hour > 23 || minute < 0 || minute > 59 || second < 0 || second > 59) {
+        alert('Время не верно');
+    } else {
+        alert('Не число');
+    }
+    /*задание5*/
+    let x = +prompt('Введите координату x:');
+    let y = +prompt('Введите координату y:');
+    if (x > 0 && y > 0) {
+        alert('1 четверть');
+    } else if (x < 0 && y > 0) {
+        alert('2 четверть');
+    } else if (x < 0 && y < 0) {
+        alert('3 четверть');
+    } else if (x > 0 && y < 0) {
+        alert('4 четверть');
+    } else if (x === 0 || y === 0) {
+        alert('Не принадлежит ни одной из четвертей');
+    } else {
+        alert('Не число');
+    }
+</script>
+</body>
+</html>
